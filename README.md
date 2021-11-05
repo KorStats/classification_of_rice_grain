@@ -4,11 +4,16 @@
 #### #scenario 파일에 다시 업데이트중.... (epoch수 적어도300으로 해야된다그래가지고 ㅠㅠ) 가중치는 용량 너무 커서 업로드 안됨. 별도 파일에 보관
 
 ## 과제
-###### (해결) https://lynnshin.tistory.com/48 평가지표에 대해서 읽고 요약하기
-###### yolov5s 외 yolov5 l/m/n/x 각각 4개 가중치 적용해서 결과 비교 필요
-###### 데이터 스케일링 해보기 (줌인/줌아웃/회전 데이터 추가해서 학습) -- 전체적인 평가지표 수치가 개선되는지 봐야함
-###### 시나리오들에 cross-validation 적용하기
-###### 데이터 증분 https://lee-mandu.tistory.com/520?category=838684
+###### 1. 154장 epoch30 설정 -> yolov5의 다섯가지 모델 결과 출력 --> 모델 선택 (아마도 yolov5x가 되지 않을까)
+###### 2. 데이터 증분하여 epoch 30 + yolov5x 모델 적용 (정확도 얼마나 증가하는지) https://lee-mandu.tistory.com/520?category=838684
+###### 3. class 불균형 -> juk 이미지 증분 -> epoch 30 + yolov5x 모델 적용 (juk에 대한 인식률 얼마나 증가하는지)
+###### 4. 하이퍼파라미터 조정 (epoch 수, batch_size, momentum 등등) //이 과정이 정말 많은 시간이 걸릴듯... 
+###### 5. (시간 남으면) 모델 구조 수정
+###### 6. 최종 모델 선택해서 평가지표 시연영상 녹화
+
+###### Question 7 관련. yolov5x 자체가 이미 crop 인식률이 매우 높아 데이터 전처리과정을 진행한다 해도 효과가 두드러지게 안나타날 수도 있음. 
+###### 속도가 가장 빠르지만 정확도는 떨어지는 yolov5s모델, epoch30 설정해서 데이터 증분/불균형을 이 모델로 테스트하면 효과가 더 눈에띄게 나타나지않을까? 하는 고민...
+
 ###### yolo 이론 https://deepbaksuvision.github.io/Modu_ObjectDetection/
 
 ## Question
@@ -22,7 +27,7 @@
 
 ## 발표 구상
 ###### 1. 왜 yolo인가? (기존 프로그램과의 차이점 보여주기: real time으로 하기 위해) //1분
-###### 2. model 선택 (epoch30, batch_size=16으로 한 yolov5 s/m/l/x 결과 이미지 비교 ) //1분
+###### 2. 이미지라벨링 과정 및 model 선택 (epoch30, batch_size=16으로 한 yolov5 s/m/l/x 결과 이미지 비교 ) //1분
 ###### 3. 데이터 부족함에 대한 해결 방안 -> 증분을 이용하여서 정확도 XX % 향상됨 //1분
 ###### 4. class 불균형에 대한 해결 방안 -> juk 이미지 증분해봄 -> juk 에 대한 인식률 OO % 향상됨 //1분
 ###### 5. 하이퍼파라미터 조정 (batch_size 조정, epoch 조정, momentum 조정) //2분
