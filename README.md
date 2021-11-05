@@ -16,7 +16,7 @@
 
 ###### yolo 이론 https://deepbaksuvision.github.io/Modu_ObjectDetection/
 
-## Question
+## 교수님께 Question
 ###### 1. juk의 학습이 제대로 이루어지지않음. 평가지표를 count로 계산하는 것은 이론상 오류가 있는 것인지. juk의 이미지를 늘릴수는 없는지
 ###### 2. 정확도 향상에 대한 아이디어 수집
 ###### 3. 겹치는 데이터 많은 경우 yolo모델이 과연 옳은가 (오버랩 모델에서는 faster-RNN이 더 효과적)
