@@ -1,2 +1,0 @@
-아무 처리도 하지 않은 이미지에 train_test_split을 test_size=0.1, random_state=0으로 놓고
-!python train.py --img 640 --batch 16 --epochs 30 --data /content/dataset/data.yaml --cfg ./models/yolov5s.yaml --weights yolov5s.pt --name grain_results 실행
