@@ -9,7 +9,7 @@ https://arxiv.org/pdf/1806.03891.pdf
 ###### 1. 150장 crop 데이터로 epoch20, batch 16 으로 yolov5s,m,l,x 각각 결과, 테스트 결과(이미지, 좌표), weight 지표 저장 (test_size=0.1)
 ###### 2. 1500장 crop 증분 데이터(90도 회전)로 epoch20, batch16으로 yolovx모델 결과, 테스트 결과(이미지, 좌표), weight 지표 저장 (test_size=0.1)
 ###### 3. 하이퍼파라미터 조정 (epoch : 30, 50, 100 -> batch 8, 32, 64 -> momentum, learning_rate조정)
-###### 3-1. epoch 20 + batch 16 / epoch 20 + batch 16 / epoch 20 + batch 32 / epoch 20 + batch 64 => 최적의 batch 선택
+###### 3-1. epoch 20 + batch 8 / epoch 20 + batch 16 / epoch 20 + batch 32 / epoch 20 + batch 64 => 최적의 batch 선택
 ###### 3-2. epoch 30 + batch / epoch 50 + batch / epoch 70 + batch / epoch 100 + batch => 최적의 epoch 선택
 ###### 3-3. 시간 남으면 momentum, learning_rate 조정하기
 ###### 4. 프로젝트 1의 최종 모델로 결과, 테스트결과(이미지, 좌표), weight지표 저장
