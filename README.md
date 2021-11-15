@@ -2,6 +2,8 @@
 
 https://arxiv.org/pdf/1806.03891.pdf
 
+https://paperswithcode.com/task/object-counting
+
 ## Today
 #### evolve 활용해보기
 #### epoch 늘리면 늘릴수록 정확도가 높아지긴 하는데... 시간이 너무 소요되서 적당한 epoch 값 찾아주기
